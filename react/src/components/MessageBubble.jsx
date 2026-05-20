@@ -35,7 +35,7 @@ const MessageBubble = ({ message }) => {
         <div className='inline-flex flex-col gap-2 p-2 px-4 max-w-2xl bg-primary/20 dark:bg-[#57317c]/30
          border border-[#80609F]/30 rounded-md mt-2'>
          {message.isImage ? (
-          <img src={message.content} alt="Generated" className='max-w-[300px] rounded-md mt-2 cursor-pointer hover:scale-105 transition'/>
+          <img src={message.content} alt="Generated" className='max-w-75 rounded-md mt-2 cursor-pointer hover:scale-105 transition'/>
          ) 
          :
          ( 

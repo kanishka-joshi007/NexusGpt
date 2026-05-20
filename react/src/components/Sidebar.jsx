@@ -41,7 +41,7 @@ const Sidebar = ({ ismenuopen, setIsMenuOpen }) => {
 
   
   return (
-    <div className={`flex flex-col h-full min-w-66 p-0.5 dark:bg-gradient-to-b from-[#242124]/30 to-[#000000]/30 
+    <div className={`flex flex-col h-full min-w-66 p-0.5 dark:bg-linear-to-b from-[#242124]/30 to-[#000000]/30 
                      border-r border-[#80609f]/30 backdrop-blur-3xl transition-colors duration-300 max-md:absolute left-0 z-10 ${!ismenuopen && 'max-md:-translate-x-full'} `}>
       {/* {logo} */}
 
@@ -53,7 +53,7 @@ const Sidebar = ({ ismenuopen, setIsMenuOpen }) => {
       {/* {New chat button} */}
 
       <button  onClick={createNewChat} className=' absolute flex justify-center items-center w-60  mt-24 ml-3
-                        text-white bg-gradient-to-r from-[#372a44] to-[#3D81F6] text-sm rounded-md cursor-pointer'>
+                        text-white bg-linear-to-r from-[#372a44] to-[#3D81F6] text-sm rounded-md cursor-pointer'>
         <span className='mr-2 text-xl'>+</span>New Chat
       </button>
 
