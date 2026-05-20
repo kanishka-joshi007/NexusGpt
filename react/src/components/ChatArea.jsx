@@ -115,16 +115,16 @@ const ChatArea = () => {
   }, [messages]);
 
   return (
-    <div className='flex h-screen flex-col justify-between m-3 sm:m-5 md:m-10 xl:mx-30 max-md:mt-2 2xl:pr-40 overflow-hidden'>
+    <div className='flex flex-1 flex-col justify-between m-5 md:m-10 xl:mx-30 max-md:mt-4 2xl:pr-40'>
 
       {/* CHAT MESSAGES */}
-      <div ref={containerRef} className='flex-1 overflow-y-auto mb-3 min-h-0'>
+      <div ref={containerRef} className='flex-1 mb-5 overflow-y-scroll'>
 
         {messages.length === 0 && (
           <div className='h-full flex flex-col items-center justify-center text-primary'>
             <img
               src={theme === 'dark' ? logoDark : logoLight}
-              className='relative w-full max-w-65 sm:max-w-78'
+              className='relative w-full max-w-65 sm:mx-w-78'
               alt=""
             />
             <p className='absolute mt-24 text-3xl sm:text-5xl text-center text-gray-400 dark:text-white'>
@@ -164,7 +164,7 @@ const ChatArea = () => {
       {/* INPUT */}
       <form
         className='bg-primary/20 dark:bg-[#583C79]/30 border border-primary/30
-        dark:border-[#80609f]/30 rounded-full w-full max-w-2xl p-3 pl-4 mx-auto  flex items-center gap-2 sm:gap-4'
+        dark:border-[#80609f]/30 rounded-full w-full max-w-2xl p-3 pl-4 mx-auto flex gap-4 items-center'
         onSubmit={onSubmit}
       >
 
