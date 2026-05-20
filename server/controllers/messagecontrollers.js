@@ -123,7 +123,7 @@ export const imageMessageController = async (req, res) => {
             content: uploadResponse.url,
             timestamp: Date.now(),
             isImage: true,
-            isPublished
+            isPublished: isPublished === true
         };
 
 

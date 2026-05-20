@@ -105,7 +105,7 @@ export const getPublishedImages = async (req, res) => {
       chat.messages.forEach((msg) => {
 
         // only image messages
-        if (msg.isImage === true) {
+        if (msg.isImage === true && msg.isPublished === true) {
 
           images.push({
             imageUrl: msg.content,
