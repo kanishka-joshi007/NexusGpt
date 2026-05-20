@@ -8,12 +8,7 @@
     font-family: "Outfit", sans-serif;
 }
 
-html,
-body,
-#root {
-  height: 100%;
-  overflow: hidden;
-}
+
 
 @theme{
   --color-primary: #E6CCFF;
